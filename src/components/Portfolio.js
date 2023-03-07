@@ -9,10 +9,14 @@ const Portfolio = () => {
     {
       id: 1,
       src: RecipeCenter,
+      link: `https://recipe-center.netlify.app/`,
+      code: `https://github.com/DawidDabrowskii/Recipe-Center`,
     },
     {
       id: 2,
       src: RecipeCenter,
+      link: `https://recipe-center.netlify.app/`,
+      code: `https://github.com/DawidDabrowskii/Recipe-Center`,
     },
   ];
 
@@ -30,7 +34,7 @@ const Portfolio = () => {
         </div>
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, link, code }) => (
             <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
               <img
                 src={src}
@@ -46,13 +50,24 @@ const Portfolio = () => {
                   className='w-2/12 mx-4 mt-3'
                 />
               </div>
-              <div className='flex items-center justify-center'>
-                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
+              <div className='flex items-center justify-center text-center'>
+                <a
+                  type='button'
+                  className='w-1/2 px-2 py-3 m-4 duration-200 hover:scale-105'
+                  href={link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   Demo
-                </button>
-                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
+                </a>
+                <a
+                  className='w-1/2 px-2 py-3 m-4 duration-200 hover:scale-105'
+                  href={code}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
