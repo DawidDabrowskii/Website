@@ -2,10 +2,10 @@ import html from '../assets/html.png';
 import css from '../assets/css.png';
 import scss from '../assets/scss.png';
 import javascript from '../assets/javascript.png';
-import reactImage from '../assets/react.png';
 import tailwind from '../assets/tailwind.png';
 import github from '../assets/github.png';
 import bootstrap from '../assets/bootstrap.png';
+import reactImage from '../assets/react.png';
 
 const Technologies = () => {
   const technologies = [
@@ -60,7 +60,7 @@ const Technologies = () => {
   ];
   return (
     <div
-      name='technologies '
+      name='technologies'
       className='bg-gradient-to-b from-gray-800 to-black w-full h-screen'
     >
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>

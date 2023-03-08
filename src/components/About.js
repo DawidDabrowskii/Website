@@ -11,23 +11,21 @@ const About = () => {
           </p>
         </div>
         <p className='text-xl mt-20'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quasi
-          ducimus tempora laboriosam id modi velit dicta, quibusdam, sed
-          voluptatibus ea commodi doloremque. Officiis inventore ducimus, neque
-          cumque, itaque dolorem saepe rem distinctio recusandae ipsa a quisquam
-          quis aut sit ea error veritatis pariatur illum ab ratione quam enim
-          explicabo.
+          I would describe myself as a frontend developer with a strong
+          commitment to delivering high-quality web interfaces that meet the
+          needs and expectations of users. With a thorough understanding of web
+          development technologies and best practices, I am able to write clean,
+          efficient, and visually appealing code. Additionally, I enjoy working
+          in team with people which I can also learn from.
         </p>
         <br />
 
         <p className='text-xl'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-          consequatur obcaecati atque sunt et culpa dignissimos laudantium
-          voluptatibus voluptas, iure repellendus velit architecto ab tempore
-          necessitatibus vitae tempora incidunt inventore praesentium
-          accusantium! Error alias aliquid fuga pariatur deserunt deleniti
-          reprehenderit architecto dolorem. Eveniet maiores minima omnis non
-          eligendi animi consectetur!
+          I am fascinated by the possibilities of front-end development and want
+          to use my skills to create interactive and user-friendly applications.
+          I am confident that as a Front-end Developer I will have the
+          opportunity to continuously develop and gain new experiences, which is
+          extremely important to me.
         </p>
       </div>
     </div>
