@@ -24,7 +24,7 @@ const Portfolio = () => {
       title: 'Cinemacify',
       src: Cinemacify,
       link: `/`,
-      code: `https://github.com/DawidDabrowskii/Recipe-Center`,
+      code: `https://github.com/DawidDabrowskii/Cinemacify`,
       technologies: [ReactImage, Tailwind, HTML],
     },
   ];
