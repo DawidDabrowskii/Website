@@ -1,12 +1,12 @@
 import RecipeCenter from '../assets/portfolio/RecipeCenter.png';
 import Cinemacify from '../assets/portfolio/CinemacifyBeta.png';
-import CSS from '../assets/css.png';
+// import CSS from '../assets/css.png';
 import SCSS from '../assets/scss.png';
 import JavaScript from '../assets/javascript.png';
 import HTML from '../assets/html.png';
 import Tailwind from '../assets/tailwind.png';
-import Github from '../assets/github.png';
-import Bootstrap from '../assets/bootstrap.png';
+// import Github from '../assets/github.png';
+// import Bootstrap from '../assets/bootstrap.png';
 import ReactImage from '../assets/react.png';
 
 const Portfolio = () => {
