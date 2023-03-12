@@ -1,5 +1,5 @@
 import RecipeCenter from '../assets/portfolio/RecipeCenter.png';
-import Cinemacify from '../assets/portfolio/CinemacifyBeta.png';
+import Cinemacify from '../assets/portfolio/Cinemacify.png';
 // import CSS from '../assets/css.png';
 import SCSS from '../assets/scss.png';
 import JavaScript from '../assets/javascript.png';
@@ -23,7 +23,7 @@ const Portfolio = () => {
       id: 2,
       title: 'Cinemacify',
       src: Cinemacify,
-      link: `/`,
+      link: `https://cinemate-ul.netlify.app/`,
       code: `https://github.com/DawidDabrowskii/Cinemacify`,
       technologies: [ReactImage, Tailwind, HTML],
     },
@@ -32,8 +32,7 @@ const Portfolio = () => {
   return (
     <div
       name='portfolio'
-      className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'
-    >
+      className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
@@ -67,16 +66,14 @@ const Portfolio = () => {
                   className='w-1/2 px-2 py-3 m-4 duration-200 hover:scale-105 hover:text-violet-500'
                   href={link}
                   target='_blank'
-                  rel='noopener noreferrer'
-                >
+                  rel='noopener noreferrer'>
                   Demo
                 </a>
                 <a
                   className='w-1/2 px-2 py-3 m-4 duration-200 hover:scale-105 hover:text-violet-500'
                   href={code}
                   target='_blank'
-                  rel='noopener noreferrer'
-                >
+                  rel='noopener noreferrer'>
                   Code
                 </a>
               </div>
