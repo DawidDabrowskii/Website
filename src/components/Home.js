@@ -6,8 +6,7 @@ const Home = () => {
   return (
     <div
       name='home'
-      className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'
-    >
+      className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row md:gap-5'>
         <div className='flex flex-col justify-center h-full lg:ml-14 xl:ml-0 my-36'>
           <h2 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white'>
@@ -17,7 +16,7 @@ const Home = () => {
             Hello World!
           </h3>
           <p className='text-gray-400 py-4 max-w-md'>
-            Welcome to my website, here you can learn some useful information
+            Welcome to my website, here you can learn some useful informations
             about me.
           </p>
           <div className='flex justify-center md:justify-start'>
@@ -25,8 +24,7 @@ const Home = () => {
               to='portfolio'
               smooth
               duration={500}
-              className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-b from-violet-500 to-gray-800 cursor-pointer'
-            >
+              className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-b from-violet-500 to-gray-800 cursor-pointer'>
               Portfolio
               <span className='group-hover:rotate-90 duration-200'>
                 <MdOutlineArrowRight size={25} className='ml-1' />

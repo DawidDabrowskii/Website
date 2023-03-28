@@ -8,11 +8,21 @@ import Tailwind from '../assets/tailwind.png';
 // import Github from '../assets/github.png';
 // import Bootstrap from '../assets/bootstrap.png';
 import ReactImage from '../assets/react.png';
+import ClothingShop from '../assets/portfolio/ClothingShop.png';
+import StyledComponents from '../assets/styledcomponents.png';
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      title: 'Clothing Shop',
+      src: ClothingShop,
+      link: `https://clothing-shop-dd.netlify.app/`,
+      code: `https://github.com/DawidDabrowskii/Clothing-Shop`,
+      technologies: [ReactImage, StyledComponents, JavaScript],
+    },
+    {
+      id: 2,
       title: 'RecipeCenter',
       src: RecipeCenter,
       link: `https://recipe-center.netlify.app/`,
@@ -20,7 +30,7 @@ const Portfolio = () => {
       technologies: [SCSS, HTML, JavaScript],
     },
     {
-      id: 2,
+      id: 3,
       title: 'Cinemacify',
       src: Cinemacify,
       link: `https://cinemate-ul.netlify.app/`,
