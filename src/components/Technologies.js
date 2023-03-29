@@ -8,6 +8,7 @@ import bootstrap from '../assets/bootstrap.png';
 import reactImage from '../assets/react.png';
 import styledcomponents from '../assets/styledcomponents.png';
 import typescript from '../assets/typescript.png';
+import framermotion from '../assets/framermotion.png';
 
 const Technologies = () => {
   const technologies = [
@@ -19,15 +20,15 @@ const Technologies = () => {
     },
     {
       id: 2,
-      src: javascript,
-      title: 'JavaScript',
-      style: 'shadow-yellow-500',
-    },
-    {
-      id: 3,
       src: reactImage,
       title: 'React',
       style: 'shadow-cyan-400',
+    },
+    {
+      id: 3,
+      src: javascript,
+      title: 'JavaScript',
+      style: 'shadow-yellow-500',
     },
     {
       id: 4,
@@ -37,39 +38,45 @@ const Technologies = () => {
     },
     {
       id: 5,
-      src: html,
-      title: 'HTML',
-      style: 'shadow-orange-500',
-    },
-    {
-      id: 6,
-      src: scss,
-      title: 'SCSS',
-      style: 'shadow-pink-300',
-    },
-    {
-      id: 7,
       src: tailwind,
       title: 'Tailwind',
       style: 'shadow-sky-400',
     },
     {
+      id: 6,
+      src: html,
+      title: 'HTML',
+      style: 'shadow-orange-500',
+    },
+    {
+      id: 7,
+      src: framermotion,
+      title: 'Framer-Motion',
+      style: 'shadow-violet-500',
+    },
+    {
       id: 8,
+      src: bootstrap,
+      title: 'Bootstrap',
+      style: 'shadow-violet-600',
+    },
+    {
+      id: 9,
       src: github,
       title: 'Github',
       style: 'shadow-gray-400',
     },
     {
-      id: 9,
+      id: 10,
+      src: scss,
+      title: 'SCSS',
+      style: 'shadow-pink-300',
+    },
+    {
+      id: 11,
       src: styledcomponents,
       title: 'StyledComponents',
       style: 'shadow-pink-400',
-    },
-    {
-      id: 10,
-      src: bootstrap,
-      title: 'Bootstrap',
-      style: 'shadow-violet-600',
     },
   ];
   return (

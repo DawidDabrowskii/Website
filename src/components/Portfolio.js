@@ -1,20 +1,28 @@
 import RecipeCenter from '../assets/portfolio/RecipeCenter.png';
 import Cinemacify from '../assets/portfolio/Cinemacify.png';
-// import CSS from '../assets/css.png';
 import SCSS from '../assets/scss.png';
 import JavaScript from '../assets/javascript.png';
 import HTML from '../assets/html.png';
 import Tailwind from '../assets/tailwind.png';
-// import Github from '../assets/github.png';
-// import Bootstrap from '../assets/bootstrap.png';
 import ReactImage from '../assets/react.png';
 import ClothingShop from '../assets/portfolio/ClothingShop.png';
 import StyledComponents from '../assets/styledcomponents.png';
+import TypeScript from '../assets/typescript.png';
+import Cosmoverse from '../assets/portfolio/Cosmoverse.png';
+import FramerMotion from '../assets/framermotion.png';
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      title: 'Cosmoverse',
+      src: Cosmoverse,
+      link: `https://cosmoverse-dd.netlify.app/`,
+      code: `https://github.com/DawidDabrowskii/Cosmoverse`,
+      technologies: [TypeScript, ReactImage, FramerMotion],
+    },
+    {
+      id: 2,
       title: 'Clothing Shop',
       src: ClothingShop,
       link: `https://clothing-shop-dd.netlify.app/`,
@@ -22,7 +30,7 @@ const Portfolio = () => {
       technologies: [ReactImage, StyledComponents, JavaScript],
     },
     {
-      id: 2,
+      id: 3,
       title: 'RecipeCenter',
       src: RecipeCenter,
       link: `https://recipe-center.netlify.app/`,
@@ -30,7 +38,7 @@ const Portfolio = () => {
       technologies: [SCSS, HTML, JavaScript],
     },
     {
-      id: 3,
+      id: 4,
       title: 'Cinemacify',
       src: Cinemacify,
       link: `https://cinemate-ul.netlify.app/`,
