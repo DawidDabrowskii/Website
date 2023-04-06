@@ -10,11 +10,21 @@ import StyledComponents from '../assets/styledcomponents.png';
 import TypeScript from '../assets/typescript.png';
 import Cosmoverse from '../assets/portfolio/Cosmoverse.png';
 import FramerMotion from '../assets/framermotion.png';
+import ThursdayPlays from '../assets/portfolio/ThursdayPlays.png';
+import ReduxImage from '../assets/redux.png';
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      title: 'ThursdayPlays',
+      src: ThursdayPlays,
+      link: `https://thursdayplays.netlify.app/`,
+      code: `https://github.com/DawidDabrowskii/ThursdayPlays`,
+      technologies: [TypeScript, ReduxImage, ReactImage],
+    },
+    {
+      id: 2,
       title: 'Cosmoverse',
       src: Cosmoverse,
       link: `https://cosmoverse-dd.netlify.app/`,
@@ -22,20 +32,12 @@ const Portfolio = () => {
       technologies: [TypeScript, ReactImage, FramerMotion],
     },
     {
-      id: 2,
+      id: 3,
       title: 'Clothing Shop',
       src: ClothingShop,
       link: `https://clothing-shop-dd.netlify.app/`,
       code: `https://github.com/DawidDabrowskii/Clothing-Shop`,
       technologies: [ReactImage, StyledComponents, JavaScript],
-    },
-    {
-      id: 3,
-      title: 'RecipeCenter',
-      src: RecipeCenter,
-      link: `https://recipe-center.netlify.app/`,
-      code: `https://github.com/DawidDabrowskii/Recipe-Center`,
-      technologies: [SCSS, HTML, JavaScript],
     },
     {
       id: 4,
@@ -44,6 +46,14 @@ const Portfolio = () => {
       link: `https://cinemate-ul.netlify.app/`,
       code: `https://github.com/DawidDabrowskii/Cinemacify`,
       technologies: [ReactImage, Tailwind, HTML],
+    },
+    {
+      id: 5,
+      title: 'RecipeCenter',
+      src: RecipeCenter,
+      link: `https://recipe-center.netlify.app/`,
+      code: `https://github.com/DawidDabrowskii/Recipe-Center`,
+      technologies: [SCSS, HTML, JavaScript],
     },
   ];
 

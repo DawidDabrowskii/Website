@@ -9,6 +9,7 @@ import reactImage from '../assets/react.png';
 import styledcomponents from '../assets/styledcomponents.png';
 import typescript from '../assets/typescript.png';
 import framermotion from '../assets/framermotion.png';
+import reduxImage from '../assets/redux.png';
 
 const Technologies = () => {
   const technologies = [
@@ -62,18 +63,24 @@ const Technologies = () => {
     },
     {
       id: 9,
+      src: reduxImage,
+      title: 'Redux',
+      style: 'shadow-violet-800',
+    },
+    {
+      id: 10,
       src: github,
       title: 'Github',
       style: 'shadow-gray-400',
     },
     {
-      id: 10,
+      id: 11,
       src: scss,
       title: 'SCSS',
       style: 'shadow-pink-300',
     },
     {
-      id: 11,
+      id: 12,
       src: styledcomponents,
       title: 'StyledComponents',
       style: 'shadow-pink-400',
