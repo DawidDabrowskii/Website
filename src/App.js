@@ -1,20 +1,23 @@
 import NavBar from './components/NavBar';
-import Home from './components/Home';
+import Home from './pages/Home';
 import SocialLinks from './components/SocialLinks';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Technologies from './components/Technologies';
-import Contact from './components/Contact';
+import About from './pages/About';
+import Projects from './components/Projects';
+import Contact from './pages/Contact';
+import { Routes, Route } from 'react-router-dom';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
-    <div>
+    <div className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
       <NavBar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Technologies />
-      <Contact />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<PageNotFound />} />
+      </Routes>
       <SocialLinks />
     </div>
   );

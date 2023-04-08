@@ -13,8 +13,8 @@ import FramerMotion from '../assets/framermotion.png';
 import ThursdayPlays from '../assets/portfolio/ThursdayPlays.png';
 import ReduxImage from '../assets/redux.png';
 
-const Portfolio = () => {
-  const portfolios = [
+const Projects = () => {
+  const projects = [
     {
       id: 1,
       title: 'ThursdayPlays',
@@ -43,7 +43,7 @@ const Portfolio = () => {
       id: 4,
       title: 'Cinemacify',
       src: Cinemacify,
-      link: `https://cinemate-ul.netlify.app/`,
+      link: `https://cinemacify.netlify.app/`,
       code: `https://github.com/DawidDabrowskii/Cinemacify`,
       technologies: [ReactImage, Tailwind, HTML],
     },
@@ -58,20 +58,15 @@ const Portfolio = () => {
   ];
 
   return (
-    <div
-      name='portfolio'
-      className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
-      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
+    <div className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen'>
+      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full mt-24'>
         <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
-            Portfolio
-          </p>
+          <p className='text-4xl font-bold inline '>Projects</p>
           <p className='py-6'>Check out some of my work right here</p>
         </div>
-
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {portfolios.map(({ id, src, link, code, technologies, title }) => (
-            <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
+          {projects.map(({ id, src, link, code, technologies, title }) => (
+            <div key={id} className=' rounded-lg shadow shadow-violet-500'>
               <p className='text-center text-lg my-4 md:text-xl'>{title}</p>
               <img
                 src={src}
@@ -113,4 +108,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

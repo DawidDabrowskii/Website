@@ -1,0 +1,88 @@
+import { HiOutlineMail } from 'react-icons/hi';
+import { FaLinkedin } from 'react-icons/fa';
+
+const Contact = () => {
+  return (
+    <div className='w-full p-4 text-white pt-48 bg-gradient-to-b from-black to-gray-800'>
+      <div className='max-w-screen-lg mx-auto'>
+        <div className='flex justify-center text-4xl pb-4'>
+          <h6>
+            Choose
+            <span className='text-violet-500'> your </span> way to{' '}
+            <span className='text-violet-500'>contact me</span>{' '}
+          </h6>
+        </div>
+        <div className='flex flex-col w-3/4 mx-auto mt-24 '>
+          <h6 className='font-semibold text-xl pb-8 text-center'>
+            Contact options
+          </h6>
+          <div className='flex mt-4 text-lg w-full justify-between'>
+            <a
+              className='border rounded-full p-4 flex gap-4 items-center justify-center hover:scale-105 duration-300 hover:text-violet-500 hover:border-violet-500'
+              href='https://linkedin.com/in/dawid-dabrowski680'
+              target='_blank'
+              rel='noreferrer'>
+              <FaLinkedin size={30} />
+              <p>Linkedin</p>
+            </a>
+            <a
+              className='border rounded-full p-4 flex gap-4 items-center justify-center hover:scale-105 duration-300 hover:text-violet-500 hover:border-violet-500'
+              href='mailto:dabrowskidawid680@gmail.com'
+              target='_blank'
+              rel='noreferrer'>
+              <HiOutlineMail size={30} />
+              <p>E-Mail</p>
+            </a>
+            <div className='border rounded-full p-4 hover:scale-105 duration-300 hover:text-violet-500 hover:border-violet-500'>
+              <p>dabrowskidawid680@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full mt-48'>
+        <div className='pb-8 text-center'>
+          <h5 className='text-4xl font-bold '>Form</h5>
+          <p className='py-6'>
+            Submit the form below to get in touch with me directly
+          </p>
+        </div>
+        <div className='flex justify-center items-center'>
+          <form
+            action='https://getform.io/f/b62c9c68-b2cc-4c9f-a0fc-c69a6b00d365'
+            method='POST'
+            className='flex flex-col w-full md:w-1/2'>
+            <label className='translate-y-96' htmlFor='name'></label>
+            <input
+              type='text'
+              name='name'
+              required
+              placeholder='Enter your name'
+              className='p-2 bg-transparent border-2 rounded-md focus:outline-none valid:border-green-400 min'
+            />
+            <label className='translate-y-96' htmlFor='email'></label>
+            <input
+              type='type'
+              name='email'
+              minlength='3'
+              maxlength='28'
+              required
+              placeholder='Enter your email'
+              className=' my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none valid:border-green-400'
+            />
+            <textarea
+              name='message'
+              placeholder='Enter your message'
+              required
+              rows='10'
+              className='p-2 bg-transparent border-2 rounded-md focus:outline-none valid:border-green-400'></textarea>
+            <button className=' bg-gradient-to-b from-violet-500 to-gray-800 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300'>
+              Let's talk
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
