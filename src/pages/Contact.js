@@ -1,6 +1,9 @@
 import { HiOutlineMail } from 'react-icons/hi';
 import { FaLinkedin } from 'react-icons/fa';
 
+import { motion } from 'framer-motion';
+import { footerVariants } from '../utils/motion';
+
 const Contact = () => {
   return (
     <div className='w-full p-4 text-white pt-48 bg-gradient-to-b from-black to-gray-800'>
@@ -16,7 +19,12 @@ const Contact = () => {
           <h6 className='font-semibold text-xl pb-8 text-center'>
             Contact options
           </h6>
-          <div className='flex mt-4 text-lg w-full justify-between'>
+          <motion.div
+            variants={footerVariants}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
+            className='flex mt-4 text-lg w-full justify-between'>
             <a
               className='border rounded-full p-4 flex gap-4 items-center justify-center hover:scale-105 duration-300 hover:text-violet-500 hover:border-violet-500'
               href='https://linkedin.com/in/dawid-dabrowski680'
@@ -36,7 +44,7 @@ const Contact = () => {
             <div className='border rounded-full p-4 hover:scale-105 duration-300 hover:text-violet-500 hover:border-violet-500'>
               <p>dabrowskidawid680@gmail.com</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full mt-48'>
@@ -63,8 +71,8 @@ const Contact = () => {
             <input
               type='type'
               name='email'
-              minlength='3'
-              maxlength='28'
+              min='3'
+              max='28'
               required
               placeholder='Enter your email'
               className=' my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none valid:border-green-400'

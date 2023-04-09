@@ -11,6 +11,9 @@ import typescript from '../assets/typescript.png';
 import framermotion from '../assets/framermotion.png';
 import reduxImage from '../assets/redux.png';
 
+import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
+
 const Technologies = () => {
   const technologies = [
     {
@@ -87,23 +90,25 @@ const Technologies = () => {
     },
   ];
   return (
-    <div className=''>
-      <div className='p-6 flex flex-col text-white bg-slate-900 rounded-xl mx-4 shadow shadow-violet-500'>
+    <motion.div variants={fadeIn('right', 'tween', 0.2, 1)}>
+      <div className='p-6 flex flex-col text-white bg-slate-900 rounded-xl mx-4 shadow shadow-violet-500 '>
         <div>
-          <p className='text-2xl font-bold'>Technologies</p>
+          <h5 className='text-2xl font-bold ml-[-16px] sm:ml-0'>
+            Technologies
+          </h5>
         </div>
-        <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 py-4 justify-items-center'>
-          {technologies.map(({ id, src, title, style }) => (
+        <div className='w-full grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-4 justify-items-center'>
+          {technologies.map(({ id, src, title }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 p-2 rounded-lg ${style} w-16 h-16 flex flex-col items-center`}>
+              className={`shadow-md hover:scale-105 duration-500 p-2 rounded-lg w-16 h-16 flex flex-col items-center`}>
               <img src={src} alt={title} className='w-20' />
               <p className='mt-4 text-xs whitespace-nowrap'>{title}</p>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

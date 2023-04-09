@@ -9,7 +9,7 @@ import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
-    <div className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
+    <div className='w-full bg-gradient-to-b from-black via-black to-gray-800'>
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />

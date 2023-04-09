@@ -4,6 +4,7 @@ import image from '../assets/heroImage.jpg';
 
 import { useTime, useTransform } from 'framer-motion';
 import { motion } from 'framer-motion';
+import { staggerContainer, fadeIn } from '../utils/motion';
 
 const About = () => {
   const time = useTime();
@@ -41,9 +42,16 @@ const About = () => {
           <div className='wave z-10 absolute'></div>
         </div>
       </div>
-      <div className='max-w-screen-xl p-4 mx-auto grid grid-cols-3 justify-center mt-12 z-10 relative '>
+      <motion.div
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.25 }}
+        className='max-w-screen-xl p-4 mx-auto grid grid-cols-2 lg:grid-cols-3 justify-center mt-12 z-10 relative '>
         <Technologies />
-        <div className='p-6 flex flex-col gap-8 bg-slate-900 rounded-xl mx-4 shadow shadow-violet-500'>
+        <motion.div
+          variants={fadeIn('up', 'tween', 0.3, 1)}
+          className='p-6 flex flex-col gap-8 bg-slate-900 rounded-xl mx-4 shadow shadow-violet-500'>
           <h5 className='text-2xl font-bold'>About me</h5>
           <p>Hello, my name is Dawid</p>
           <p>
@@ -61,8 +69,10 @@ const About = () => {
             Skills developed during that period helped me a lot in learning web
             development{' '}
           </p>
-        </div>
-        <div className='p-6  flex flex-col bg-slate-900 rounded-xl mx-4 gap-4 shadow shadow-violet-500'>
+        </motion.div>
+        <motion.div
+          variants={fadeIn('left', 'tween', 0.2, 1)}
+          className='p-6 flex flex-col bg-slate-900 rounded-xl mx-4 gap-4 shadow shadow-violet-500 mt-4 lg:mt-0'>
           <h5 className='text-2xl font-bold'>Last Project:</h5>
           <div className='mt-4 hover:scale-105 duration-300'>
             <a
@@ -81,8 +91,8 @@ const About = () => {
             colleagues every thursday according to present players and their
             skillrates.
           </p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
