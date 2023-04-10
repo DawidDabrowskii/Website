@@ -98,10 +98,10 @@ const Technologies = () => {
           </h5>
         </div>
         <div className='w-full grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-4 justify-items-center'>
-          {technologies.map(({ id, src, title }) => (
+          {technologies.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 p-2 rounded-lg w-16 h-16 flex flex-col items-center`}>
+              className={`shadow-md hover:scale-105 duration-500 p-2 rounded-lg w-16 h-16 flex flex-col items-center ${style}`}>
               <img src={src} alt={title} className='w-20' />
               <p className='mt-4 text-xs whitespace-nowrap'>{title}</p>
             </div>
